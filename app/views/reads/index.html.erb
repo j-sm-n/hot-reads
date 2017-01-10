@@ -1,7 +1,9 @@
-<h1>Hot Reads!</h1>
-
-<h2>Here are the latest top <%= @read_count %> reads:</h2>
-
-<div class="latest-reads" id="top-reads">
-  
-</div>
+<h2>Hot Reads!</h2>
+<ol id="hot-reads">
+<% @hot_reads.each do |read| %>
+  <li class='hot-read'>
+    <a href="<%= read.url %>"><%= read.url %></a>
+  </li>
+<% end %>
+</ol>
+<img src="https://m.popkey.co/4c7272/QL6mJ.gif">
