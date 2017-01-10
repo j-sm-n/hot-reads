@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Read.create!(title: 'Star Wars', url: 'http://starwars.com')
+Read.create!(title: 'Pokemon Go', url: 'http://pokemongo.com')
+Read.create!(title: 'Mass Effect', url: 'http://masseffect.com')
