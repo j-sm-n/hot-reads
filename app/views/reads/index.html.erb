@@ -2,7 +2,7 @@
 <ol id="hot-reads">
 <% @hot_reads.each do |read| %>
   <li class='hot-read'>
-    <a href="<%= read.url %>"><%= read.url %></a>
+    <a href="<%= read[0] %>"><%= read[0] %></a>
   </li>
 <% end %>
 </ol>
