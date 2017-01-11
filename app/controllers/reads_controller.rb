@@ -3,7 +3,7 @@ class ReadsController < ApplicationController
     @hot_reads = Read.hot
 
     respond_to do |format|
-      format.json {render json: @hot_links}
+      format.json { render json: @hot_reads }
       format.html
     end
   end
