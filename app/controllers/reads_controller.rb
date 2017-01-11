@@ -10,6 +10,7 @@ class ReadsController < ApplicationController
 
   def create
     @read = Read.find_or_initialize_by(url: params[:url])
+    @read.count += 1
     if @read.save
       render json: @read, status: 201
     else
