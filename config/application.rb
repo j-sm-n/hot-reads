@@ -23,3 +23,12 @@ module HotReads
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+module FinalHotreads
+  class Application < Rails::Application
+    config.action_dispatch.default_headers = {
+      'Access-Control-Allow-Origin' => '*',
+      'Access-Control-Request-Method' => ['GET', 'POST']
+    }
+  end
+end
