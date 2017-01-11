@@ -1,9 +1,9 @@
 <h2>Hot Reads!</h2>
-<ol id="hot-reads">
-<% @hot_reads.each do |read| %>
-  <li class='hot-read'>
-    <a href="<%= read[0] %>"><%= read[0] %></a>
-  </li>
-<% end %>
-</ol>
+  <ol>
+    <% @hot_reads.each do |link| %>
+      <li>
+        <%= link.url %>
+      </li>
+    <% end %>
+  </ol>
 <img src="https://m.popkey.co/4c7272/QL6mJ.gif">
